@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emran AI Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="logo">Emran <span>AI</span></h2>
+            <nav>
+                <button class="nav-btn active">Chat Playground</button>
+                <button class="nav-btn">Voice Studio</button>
+                <button class="nav-btn">Settings</button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>AI Studio Playground</h1>
+                <p>Gemini & Voice Synthesis Models</p>
+            </header>
+
+            <div class="chat-window" id="chatWindow">
+                <div class="msg bot">Hello! Main Emran AI Studio hoon. Main aapki kaise madad kar sakta hoon?</div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="userInput" placeholder="Yahan apna prompt likhein..."></textarea>
+                <div class="controls">
+                    <select id="modelSelect">
+                        <option value="gemini-pro">Gemini 1.5 Pro</option>
+                        <option value="eleven-voice">ElevenLabs Voice</option>
+                    </select>
+                    <button id="sendBtn">Generate</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
